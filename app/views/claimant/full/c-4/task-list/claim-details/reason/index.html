@@ -25,7 +25,6 @@ Money Claims Prototype
           </h1>
           <div class=""><p>Briefly explain why you believe the defendant owes you money.</p>  </div>
 
-
           <fieldset>
             <legend class="visuallyhidden">
               Why you're owed the money
@@ -45,7 +44,8 @@ Money Claims Prototype
           <a href="{{ data.return_page if data.return_page | length > 0 else '../task-list' }}">Cancel</a>
           {% else %}
           <div class="form-group">
-            <input type="submit" class="button" value="Save and continue"/>
+            <a class="button" href="/claimant/full/c-4/confirmation-page" role="button">Save and continue</a>
+            <!--<input type="submit" class="button" value="Save and continue"/>-->
           </div>
           {% endif %}
         </form>

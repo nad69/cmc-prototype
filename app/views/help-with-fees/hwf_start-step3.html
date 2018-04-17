@@ -1,0 +1,65 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Help with Fees Prototype
+{% endblock %}
+{% block home_link %} ../../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form
+      name="aspnetForm"
+      method="post"
+      onsubmit="multiNavigation('radio_group2', ['interest_yes','interest_no'], ['interest-q/interest-type2', 'total']);return false;"
+      id="aspnetForm"
+      autocomplete="off">
+      {{formData | safe}}
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large"><span class="heading-secondary">Step 3 of 20</span></h1>
+      <h1 class="heading-large">
+        Are you single, married or living with someone and sharing an income?
+      </h1>
+      <form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="Single">
+        <label for="radio-1">Single</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="Married or living with someone and sharing an income">
+        <label for="radio-2">Married or living with someone and sharing an income</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+        <details>
+
+          <summary>
+            <span class="summary">Help with status</span>
+          </summary>
+
+          <div class="panel panel-border-narrow">
+            <p>You can claim 8% interest on money owed to you. If you know that a different rate applies you can use that. For example if you have a contract with a specific rate.</p>
+            <p>The court will decide if you're entitled to some or all of the interest claimed.</p>
+          </div>
+
+        </details>
+        <br>
+
+      <div class="form-group">
+        <a class="button" href="hwf_step4" role="button">Continue</a>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

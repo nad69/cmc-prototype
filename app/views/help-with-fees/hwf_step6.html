@@ -1,0 +1,68 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} ../../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form
+      name="aspnetForm"
+      method="post"
+      onsubmit="multiNavigation('radio_group2', ['interest_yes','interest_no'], ['interest-q/interest-type2', 'total']);return false;"
+      id="aspnetForm"
+      autocomplete="off">
+      {{formData | safe}}
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large"><span class="heading-secondary">Step 6 of 20</span></h1>
+      <h1 class="heading-large">
+        Do you receive any of the following benefits?
+      </h1>
+      <p>Please carefully check the table below to identify if you are (or were at the time you paid your fee) receiving any of the following benefits:</p>
+      <ul class="list list-bullet">
+            <li>If you are receiving one of the benefits listed in column 1, select ‘Yes’.</li>
+            <li>There are some benefits with similar names listed in column 2. If you are receiving one of these benefits, select 'No'.</li>
+            <li>If you are not receiving any of benefits listed on this page, select 'No'.</li>
+            </ul>
+
+
+<div class="text">
+<table><tr><th><strong>Column 1:<br />Select ‘Yes’ if you are receiving one of these benefits</strong></th><th>Column 2:<br />Select ‘No’ if you are receiving one of these benefits</th></tr><tr><td><strong>Income</strong>-based Jobseeker’s Allowance (JSA)</td><td><strong>Contribution</strong>-based Job Seekers Allowance (JSA)</td></tr><tr><td><strong>Income</strong>-related Employment and Support Allowance (ESA)</td><td><strong>Contribution</strong>-based Employment and Support Allowance (ESA)</td></tr><tr><td>Pension Credit (<strong>Guarantee</strong> Credit)</td><td>Pension Credit and <strong>Savings</strong> Credit</td></tr><tr><td>Universal Credit (and you’re earning <strong>less than £6,000</strong> a year)</td><td>Universal Credit (and you're earning <strong>£6,000 or more</strong> a year)</td></tr><tr><td>Scottish <strong>Civil</strong> Legal Aid (<strong>not</strong> Advice and Assistance or Advice by Way of Representation)</td><td>Scottish Legal Aid (Advice and Assistance or Advice by Way of Representation <strong>ABWOR</strong>)</td></tr><tr><td>Income Support</td><td>&nbsp;</td></tr></table></div>
+
+
+      <form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="No">
+        <label for="radio-1">No</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="Yes, I am receiving one of the benefits listed in Column 1">
+        <label for="radio-2">Yes, I am receiving one of the benefits listed in Column 1</label>
+      </div>
+
+    </fieldset>
+  </div>
+
+<div class="text">
+<h2 class="heading-small">Help with benefits</h2>
+<p>We’ll contact the Department for Work and Pensions to confirm that you are (or were) getting one of these benefits. We may also contact you if we need to see additional evidence.</p>
+
+<h2 class="heading-small">If you’ve only recently started receiving one of these benefits,</h2>
+<p>our staff may not be able to confirm your eligibility with the Department for Work and Pensions. In this case you should provide a letter from the Jobcentre.</>
+</div>
+</form>
+<br>
+      <div class="form-group">
+        <a class="button" href="hwf_step13" role="button">Continue</a>
+      </div>
+</main>
+{% endblock %}

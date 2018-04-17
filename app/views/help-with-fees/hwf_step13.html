@@ -1,0 +1,47 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} ../../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{formData | safe}}
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large"><span class="heading-secondary">Step 13 of 20</span></h1>
+      <h1 class="heading-large">
+        What is your National Insurance number?
+      </h1>
+      <p>For example, QQ123456C</p>
+       <div class="form-group">
+<input class="form-control" id="ni-number" type="text" name="ni-number"><br>
+  </div>
+
+        <details>
+
+          <summary>
+            <span class="summary">If you don’t know your National Insurance number</span>
+          </summary>
+
+          <div class="panel panel-border-narrow">
+            <div class="text"><ul class="list list-bullet"><li>look for your National Insurance number on payslips or official letters about tax, pensions or benefits</li><li><a class="external" rel="external noopener" href="https://www.gov.uk/lost-national-insurance-number" target="_blank" title="ask for a reminder through the post (Opens in a new window/tab)">ask for a reminder through the post<span class="visuallyhidden"> (Opens in a new window/tab)</span></a></li></ul><p>If you can’t provide a National Insurance number you will need to provide a letter from the Jobcentre.</p></div></div>
+          </div>
+</div>
+        </details>
+        </form>
+        <br>
+
+      <div class="form-group">
+        <a class="button" href="hwf_step14" role="button">Continue</a>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

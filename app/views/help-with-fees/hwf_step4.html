@@ -1,0 +1,89 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} ../../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form
+      name="aspnetForm"
+      method="post"
+      onsubmit="multiNavigation('radio_group2', ['interest_yes','interest_no'], ['interest-q/interest-type2', 'total']);return false;"
+      id="aspnetForm"
+      autocomplete="off">
+      {{formData | safe}}
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large"><span class="heading-secondary">Step 4 of 20</span></h1>
+      <h1 class="heading-large">
+        How much do you have in savings and investments?
+      </h1>
+      <form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="£0 to £2,999">
+        <label for="radio-1">£0 to £2,999</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="£3,000 to £15,999">
+        <label for="radio-2">£3,000 to £15,999</label>
+      </div>
+        <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="£16,000 or more">
+        <label for="radio-2">£16,000 or more</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+        <details>
+
+          <summary>
+            <span class="summary">Help with savings and investments</span>
+          </summary>
+
+          <div class="panel panel-border-narrow">
+            <h2 class="heading-small">What to include in savings and investments:</h2>
+            <ul class="list list-bullet">
+            <li>money in ISAs and any other savings account</li>
+<li>joint savings accounts that you share with your partner</li>
+<li>fixed rate or investment bonds</li>
+<li>any lump sum (eg a redundancy payout)</li>
+<li>trust funds (or any other kind of fund)</li>
+<li>second homes</li>
+<li>any money or property outside the UK</li>
+</ul>
+<h2 class="heading-small">Don’t include the following in your savings total:</h2>
+            <ul class="list list-bullet">
+            <li>wages or benefits</li>
+<li>joint savings accounts that you share with your partner if your case is against your partner or concerns divorce or gender recognition</li>
+<li>personal pensions</li>
+<li>capital value of self-employed businesses</li>
+<li>student loans</li>
+<li>unfair dismissal awards</li>
+<li>money from the criminal injury compensation scheme</li>
+<li>medical negligence or personal injury awards</li>
+<li>any compensation under a statutory scheme in respect of Mesothelioma</li> 
+</ul>
+          </div>
+
+        </details>
+        <br>
+
+      <div class="form-group">
+        <a class="button" href="hwf_step6" role="button">Continue</a>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

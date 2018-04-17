@@ -21,11 +21,11 @@
           <ul>
             <li class="bold">My tasks</li>
             {% if data['dashboard'] == 1.11 %}
-            <li>Mary Richards has rejected your claim.   <a class="openTab"  href="claimant?claimant=10#tabs-1">Do you accept or reject their response?</a></li>
-            <li>Mary Richards has made an offer to <a class="openTab"  href="claimant?claimant=10#tabs-3">settle out of court.</a></li>
+            <li>Jane Doe has rejected your claim.   <a class="openTab"  href="claimant?claimant=10#tabs-1">Do you accept or reject their response?</a></li>
+            <li>Jane Doe has made an offer to <a class="openTab"  href="claimant?claimant=10#tabs-3">settle out of court.</a></li>
             {% elif data['dashboard'] == 1.19 %}
-             <li>Mary Richards has rejected your claim.   <a class="openTab"  href="claimant?claimant=8#tabs-1">Do you accept or reject their response?</a></li>
-            <li>Mary Richards has made a counterclaim against you.   <a class="openTab"  href="claimant?claimant=18">Respond to counterclaim.</a></li>
+             <li>Jane Doe has rejected your claim.   <a class="openTab"  href="claimant?claimant=8#tabs-1">Do you accept or reject their response?</a></li>
+            <li>Jane Doe has made a counterclaim against you.   <a class="openTab"  href="claimant?claimant=18">Respond to counterclaim.</a></li>
             {% endif %}
           </ul>
         </div>
@@ -74,7 +74,7 @@
             <tr class="mobile-table">
               <td ><a href="defendant?defendant=1.1">242MC435</a></td>
               <td >Jan Clark  </td>
-              <td >£1500 </td>
+              <td >£2548 </td>
               <td class="mobile-hide mobile-table"><a a href="../../defendant/full/d-5/task-list">Respond to claim.</a> <br><span class="font-xsmall">(19 days from date of issue remaining)</span> </td>
             </tr>
             <tr >
@@ -112,8 +112,8 @@
             {% if show_all==true or data['dashboard'] == 1.2 %}
             <tr class="mobile-table">
               <td ><a href="claimant?claimant=1">352MC733</a></td>
-              <td >Mary Richards </td>
-              <td >£1500 </td>
+              <td >Jane Doe </td>
+              <td >£2548 </td>
               <td class="mobile-hide">Your claim has been sent.</td>
             </tr>
             <tr>
@@ -123,8 +123,8 @@
             {% if show_all==true or data['dashboard'] == 1.3  %}
             <tr class="mobile-table" >
               <td ><a href="claimant?claimant=2">352MC733</a></td>
-              <td >Mary Richards </td>
-              <td >£1500 </td>
+              <td >Jane Doe </td>
+              <td >£2548 </td>
               <td  class="mobile-hide">The defendant has not responded to your claim. You can request a County Court Judgment against them.
               </td>
             </tr>
@@ -135,8 +135,8 @@
             {% if  show_all==true or data['dashboard'] == 1.4 %}
             <tr class="mobile-table" >
               <td ><a href="claimant?claimant=3">352MC733</a></td>
-              <td >Mary Richards </td>
-              <td >£1500 </td>
+              <td >Jane Doe </td>
+              <td >£2548 </td>
               <td class="mobile-hide">You requested a County Court Judgment on <span class="date">19 October.</td>
               </tr>
               <tr>
@@ -160,8 +160,8 @@
                  {% elif data['dashboard'] == 1.11 %}
                  <td ><a href="claimant?claimant=10">352MC733</a></td>
                  {% endif %}
-                 <td >Mary Richards</td>
-                 <td >£1500 </td>
+                 <td >Jane Doe</td>
+                 <td >£2548 </td>
                  <td>
                   {% if data['dashboard'] == 1.5 %}
                   The defendant admits they owe all the money. Do you accept or reject their payment method?
@@ -176,23 +176,23 @@
                   {% elif data['dashboard'] == 1.11%}
                                    <p> The defendant has made an offer to settle out of court.</p>
 
-                  <p> Mary Richards has rejected your claim. </p>
+                  <p> Jane Doe has rejected your claim. </p>
                   {% endif %}
                 </td>
               </tr>
               <tr>
-                <td  class="mobile-table-status" colspan="3">Status: Mary Richards has responded to your claim.
+                <td  class="mobile-table-status" colspan="3">Status: Jane Doe has responded to your claim.
                 </td>
               </tr>
               {% endif %}
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.12   %}
               <tr  class="mobile-table" >
                 <td ><a href="claimant?claimant=11">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
                 <td class="mobile-hide">    <p> The defendant has made an offer to settle out of court.</p>
 
-                  <p> Mary Richards has rejected your claim.</p></td>
+                  <p> Jane Doe has rejected your claim.</p></td>
               </tr>
               <tr>
                 <td  class="mobile-table-status" colspan="3">Status: The defendant has made an offer to settle out of court. </td>
@@ -201,10 +201,10 @@
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.13   %}
               <tr class="mobile-table" >
                 <td ><a href="claimant?claimant=12">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500</td>
+                <td >Jane Doe</td>
+                <td >£2548</td>
                 <td class="mobile-hide"><p>You've rejected an offer to settle out of court.</p>
-                  <p> Mary Richards has rejected your claim.</p>
+                  <p> Jane Doe has rejected your claim.</p>
                 </td>
               </tr>
               <tr>
@@ -214,8 +214,8 @@
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.14   %}
               <tr class="mobile-table" >
                 <td ><a href="claimant?claimant=13">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
                 <td class="mobile-hide">You've requested free mediation. We'll notify you once the defendant responds.</td>
               </tr>
               <tr>
@@ -225,8 +225,8 @@
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.15   %}
               <tr class="mobile-table" >
                 <td ><a href="claimant?claimant=4">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
                 <td class="mobile-hide">The defendant has requested more time to respond. </td>
               </tr>
               <tr>
@@ -236,32 +236,32 @@
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.16   %}
               <tr class="mobile-table" >
                 <td ><a href="claimant?claimant=15">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
-                <td class="mobile-hide">Mary Richards has rejected your claim. </td>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
+                <td class="mobile-hide">Jane Doe has rejected your claim. </td>
               </tr>
               <tr>
-                <td  class="mobile-table-status" colspan="3">Status: Mary Richards has rejected your claim.  </td>
+                <td  class="mobile-table-status" colspan="3">Status: Jane Doe has rejected your claim.  </td>
               </tr>
               {% endif %}
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.17   %}
               <tr  class="mobile-table" >
                 <td ><a href="claimant?claimant=16">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
-                <td class="mobile-hide"><p>You've signed the agreement. We've asked Mary Richards to sign the agreement.</p>
-                  <p> Mary Richards has rejected your claim.</p>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
+                <td class="mobile-hide"><p>You've signed the agreement. We've asked Jane Doe to sign the agreement.</p>
+                  <p> Jane Doe has rejected your claim.</p>
                 </td>
               </tr>
               <tr>
-                <td  class="mobile-table-status" colspan="3">Status: You've signed the agreement. We've asked Mary Richards to sign the agreement </td>
+                <td  class="mobile-table-status" colspan="3">Status: You've signed the agreement. We've asked Jane Doe to sign the agreement </td>
               </tr>
               {% endif %}
               {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.18   %}
               <tr  class="mobile-table" >
                 <td ><a href="claimant?claimant=17">352MC733</a></td>
-                <td >Mary Richards</td>
-                <td >£1500 </td>
+                <td >Jane Doe</td>
+                <td >£2548 </td>
                 <td class="mobile-hide">You've both signed a legal agreement. The claim is now settled.</td>
               </tr>
               <tr>
@@ -282,12 +282,12 @@
               {% if show_all==true or data['dashboard'] == 1.19 %}
               <tr class="mobile-table">
                 <td><a href="claimant?claimant=9">352MC733</a></td>
-                <td>Mary Richards  </td>
-                <td>£1500 </td>
-                <td class="mobile-hide">Mary Richards has rejected the claim. But they’ve suggested a mediation session to help resolve this dispute.</td>
+                <td>Jane Doe  </td>
+                <td>£2548 </td>
+                <td class="mobile-hide">Jane Doe has rejected the claim. But they’ve suggested a mediation session to help resolve this dispute.</td>
               </tr>
               <tr>
-                <td  class="mobile-table-status" colspan="3">Status: Mary Richards has rejected the claim. But they’ve suggested a mediation session to help resolve this dispute.?
+                <td  class="mobile-table-status" colspan="3">Status: Jane Doe has rejected the claim. But they’ve suggested a mediation session to help resolve this dispute.?
                 </td>
               </tr>
               {% endif %}
@@ -314,7 +314,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=1">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td class="mobile-hide"> Respond to claim.<br><span class="font-xsmall">(19 days from date of issue remaining)</span> </td>
               </tr>
               <tr>
@@ -325,7 +325,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=2">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td >You need to respond before 4pm on 16 April 2018.</td>
               </tr>
               <tr>
@@ -336,7 +336,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=3">352MC733</a></td>
                 <td>Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td>Jan Clark requested a County Court Judgment (CCJ) against you on <span class="dates"></span>.</td>
               </tr>
               <tr>
@@ -347,7 +347,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=4">352MC733</a></td>
                 <td>Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td>You have a County Court Judgment (CCJ) against you. You must pay Jan Clark £1,500.</td>
               </tr>
               <tr>
@@ -359,7 +359,7 @@
                 <td><a href="defendant?defendant=5">352MC733</a></td>
 
                 <td>Jan Clark  </td>
-                <td>£1500 </td>
+                <td>£2548 </td>
                 <td>You've offered to pay £1,500 on 18 December.</td>
               </tr>
               <tr>
@@ -371,18 +371,18 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=8">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td>We’ve emailed Jan Clark telling them when and how you paid the claim.</td>
               </tr>
               <tr>
-                <td  class="mobile-table-status" colspan="3">Status: We’ve emailed Jan Clark telling them when and how you paid their £1500. </td>
+                <td  class="mobile-table-status" colspan="3">Status: We’ve emailed Jan Clark telling them when and how you paid their £2548. </td>
               </tr>
               {% endif %}
                {% if show_all==true or data['dashboard'] == 2.7 %}
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=9">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td>You have rejected the claim.</td>
               </tr>
               <tr>
@@ -394,7 +394,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=11">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td>You’ve rejected the claim and suggested mediation. We'll ask the claimant if they agree to take part in mediation.</td>
               </tr>
               <tr>
@@ -405,7 +405,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=12">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
 
                 <td>
                 <p>Your offer has been sent to the claimant.</p>
@@ -423,7 +423,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=10">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td><p>Your offer has been sent to the claimant.</p>
                                   <p>You have rejected the claim.</p>
 
@@ -437,7 +437,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=15">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td > <p>The claimant has accepted your offer. You need to sign a legal agreement to settle out of court.</p>
                                   <p>You have rejected the claim.</p>
 
@@ -451,7 +451,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=13">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td > <p>The claimant has rejected your offer.</p>
                                   <p>You have rejected the claim.</p>
 
@@ -465,7 +465,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=13">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td >You've accepted mediation.</td>
               </tr>
               <tr>
@@ -476,7 +476,7 @@
               <tr class="mobile-table">
                 <td ><a href="defendant?defendant=12">352MC733</a></td>
                 <td >Jan Clark  </td>
-                <td >£1500 </td>
+                <td >£2548 </td>
                 <td >You've rejected mediation. The claim may go to a hearing.</td>
               </tr>
               <tr>
@@ -487,7 +487,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=15">352MC733</a></td>
                 <td>Jan Clark  </td>
-                <td>£1500 </td>
+                <td>£2548 </td>
                 <td>  <p>The claimant has accepted your offer. You need to sign a legal agreement to settle out of court.</p>
                  <p>You have rejected the claim.</p>
 
@@ -501,7 +501,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=16">352MC733</a></td>
                 <td>Jan Clark  </td>
-                <td>£1500 </td>
+                <td>£2548 </td>
                 <td>You've both signed a legal agreement. The claim is now settled.</td>
               </tr>
               <tr>
@@ -512,7 +512,7 @@
               <tr class="mobile-table">
                 <td><a href="defendant?defendant=7">352MC733</a></td>
                 <td>Jan Clark  </td>
-                <td>£1500 </td>
+                <td>£2548 </td>
                 <td>Your response is being processed.</td>
               </tr>
               <tr>
@@ -526,6 +526,8 @@
           {% endif %}
         </div>
       </div>
+      <br>
+<a href="notice-page-start">[NEXT]</a></p>
     </main>
     <form method="post"  action="#" class="form" style="; float: left">
       <select id="dashboard2" name="dashboard2" onchange="window.location.href='home?dashboard='+this.value">
@@ -546,7 +548,6 @@
         <option value="1.13" {% if data['dashboard'] == 1.13 %}selected{% endif %}>13. Rejected Offer from defendant</option>
         <option value="1.17" {% if data['dashboard'] == 1.17 %}selected{% endif %}>14. Offer accepted and signed</option>
         <option value="1.18" {% if data['dashboard'] == 1.18 %}selected{% endif %}>15. Agreement signed - message</option>
-
       </select>
     </form>
     <form method="post"  action="#" class="form" style=" float: left;">
@@ -568,7 +569,6 @@
         <option value="2.11" {% if data['dashboard'] == 2.11 %}selected{% endif %}>10. Counter sign agreement </option>
 
         <option value="2.16" {% if data['dashboard'] == 2.16 %}selected{% endif %}>11. Agreement signed </option>
-
       </select>
     </form>
     {% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} ../../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{formData | safe}}
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large"><span class="heading-secondary">Step 14 of 20</span></h1>
+      <h1 class="heading-large">
+        What is your National Insurance number?
+      </h1>
+      <label class="form-label" for="dob">
+      <span class="form-hint">Use this format D D / M M / Y Y Y Y</span>
+       <div class="form-group">
+<input class="form-control" id="ni-number" type="text" name="ni-number"><br>
+  </div>
+        </form>
+        <br>
+
+      <div class="form-group">
+        <a class="button" href="hwf_" role="button">Continue</a>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}
