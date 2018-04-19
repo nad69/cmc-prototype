@@ -1,0 +1,40 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block content %}
+<style type="text/css">
+.report-error {display: none}
+</style>
+<main id="content" role="main">
+ <div class="breadcrumbs">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">Business and self-employed</a></li>
+    <li><a href="/">Business debt and bankruptcy</a></li>
+    <li><a href="/">Apply for a Warrant of control</a></li>
+  </ol>
+</div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Your application<br>has been submitted.</h1>
+        <br>
+        <p class="">
+          Your reference: <br><strong class="bold-large">N323/MCXXXXXXX</strong>
+        </p>
+
+        <p>
+          <strong class="bold"><span id="Date2"></span></strong>
+        </p>
+        <!--<p>
+         <a class="font-medium" target="_blank" href='/defendant/full/d-5/correspondence/forms/v2/claim-form-claimant?check=1' style="color: #FFFFFF" >Download your claim as a PDF</a>
+       </p>-->
+     </div>
+     <h2 class="heading-medium">What happens next</h2>
+     <p>We’ll process your application within 12 weeks.</p>
+           <p> <a class="button" href='/dashboard/v4/home?dashboard=1.2'>Finished</a> </p>
+
+
+</main>
+{% endblock %}

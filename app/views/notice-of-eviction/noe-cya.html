@@ -1,0 +1,103 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block content %}
+<style type="text/css">
+.report-error {display: none}
+</style>
+<main id="content" role="main">
+ <!--<div class="breadcrumbs">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">Business and self-employed</a></li>
+    <li><a href="/">Business debt and bankruptcy</a></li>
+    <li><a href="/">Apply for a Warrant of control</a></li>
+  </ol>
+</div>-->
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Check your answers for suspending your eviction</h1>
+      <h2 class="heading-medium">Personal details</h2>
+    </div>
+  </div>
+  
+  <dl class="check-your-answers check-your-answers--short">
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Name</dt>
+      <dd class="check-your-answers__answer">Sarah Phillips</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> name</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Date of birth</dt>
+      <dd class="check-your-answers__answer">5 January 1978</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> date of birth</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Home address</dt>
+      <dd class="check-your-answers__answer">72 Guild Street<br>London<br>SW23 6FH</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Contact details</dt>
+      <dd class="check-your-answers__answer">07700 900 457<br>sarah.phillips@example.com</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> contact details</span></a></dd>
+    </div>
+    
+  </dl>
+  
+  <h2 class="heading-medium">Application details</h2>
+  
+  <dl class="check-your-answers check-your-answers--short">
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Previous application number</dt>
+      <dd class="check-your-answers__answer">502135326</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Licence type</dt>
+      <dd class="check-your-answers__answer">For personal use</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license type</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Home address</dt>
+      <dd class="check-your-answers__answer">72 Guild Street<br>London<br>SW23 6FH</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
+    </div>
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">License period</dt>
+      <dd class="check-your-answers__answer"><p>This is a longer paragraph of text provided by the user to provide additional information.</p><p>This is a second paragraph of text provided by the user. </p></dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license period</span></a></dd>
+    </div>
+    
+  </dl>
+  
+  <h2 class="heading-medium">Now send your application to suspend your eviction</h2>
+  
+  <div class="text">
+    <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+  </div>
+  
+  <p><a class="button" href="noe-help-with-fees-1">Accept and send application</a></p>
+
+</main>
+
+    </div>
+  </div>
+           </main>
+           <form method="post"  action="#" class="form" style="float: left;">
+            <select id="control-box2" name="control-box2" onchange="window.location.href='?mcol2='+this.value">
+              <option  value="0" {% if data['mcol2'] == 0 %}selected{% endif %}></option>
+              <option value="1" {% if data['mcol2'] == 1 %}selected{% endif %}>1 - Money claims BETA</option>
+              <option value="2" {% if data['mcol2'] == 2 %}selected{% endif %}>2 - MCOL</option>
+            </select>
+          </form>
+{% endblock %}
