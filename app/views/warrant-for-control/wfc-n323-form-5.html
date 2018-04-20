@@ -12,71 +12,31 @@ Money Claims Prototype
     <li><a href="/">Home</a></li>
     <li><a href="/">Business and self-employed</a></li>
     <li><a href="/">Business debt and bankruptcy</a></li>
+    <li><a href="/">Apply for a Warrant of control</a></li>
   </ol>
 </div>
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h1 class="heading-xlarge">
-      Apply for a warrant of control
-    </h1>
 
-
-
-    <p class="lede">You can apply for a warrant of control if you have an money claim judgement but the defendant hasn’t paid. You can ask the County Court enforcement agent to try and get back any amount up to £5000.
-</p>
-<p>A warrant of control will only help if the person who owes you money has:</p>
+        <h2 class="heading-large">Additional information about the Debtor</h2>
+        <p>Tell us anything you know about the debtor that may help the enforcement agent. This can be things like:</p>
         <ul class="list list-bullet">
-          <li>Sufficient funds to pay all the money you are claiming for OR</li> 
-          <li>Enough goods at the address you provide which could be sold at auction to raise money to pay your claim</li>
-          </uL>
-    <!--<p>Find out more about <a href="https://www.gov.uk/make-court-claim-for-money">making a money claim</a>,-->
-    <!--such as the <a href="https://www.gov.uk/make-court-claim-for-money/court-fees">fees you’ll pay</a>.</p>-->
-        <h2 class="heading-medium">What you'll need</h2>
-        <p>To use this service you need:</p>
-        <ul class="list list-bullet">
-          <li>The address of the person owing money that you want the enforcement agent to visit</li>
-          <li>Details of the claim amount and how you’d like the money be collected</li>
+          <li>details of any goods you know belong to the defendant that could be used to pay off the money owed to you</li>
+          <li>any other addresses where they may be contacted</li>
+          <li>any dates or times when you think he or she will be at the address</li>
           </ul><br>
-
+          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="100"></textarea><br>
           <div class="clearfix">
             <form method="get" name="registration" action="eligibility" id="registration">
               <input type="hidden" name="control-box" value="1.1">
               <input type="hidden" name="respond" value="false">
-              <input type="hidden" name="make_claim" value="true">
 
-                  <a class="button button-start" href="wfc-sign-in" role="button">Start now</a>
+                  <a class="button" href="wfc-cya" role="button">Submit</a>
                 </form>
-                <!--<br>
-                <h2 class="heading-medium">Return to an existing claim</h2>
-                <p>Sign in to your account to check updates, manage a claim and make a new claim.</p>
+                
+  <!--{% include "includes/contact.html" %}->
 
-                {% if data['mcol2'] == 1 %}
-                <!--beta
-                <a  href="enter-claim-number?control-box=3&mcol=1&control-box=6" role="button">Return to an existing claim.</a>
-                {% elseif data['mcol2'] == 2%}
-                <!--mcol
-                <a  href="enter-claim-number?control-box=3&mcol=2" role="button">Return to an existing claim.</a>
-                {% else %}
-                <a  href="enter-claim-number?control-box=3&mcol=1" role="button">Return to an existing claim.</a>
-                {% endif %}
               </div>
-    <!--<p>This service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
-              <h2 class="heading-medium">Claim by paper</h2>
-              <p>You can print and complete a <a
-                href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=338">paper claim
-             form</a> instead of using this service.
-             <p>Send the form and a cheque for your <a
-               href="https://www.gov.uk/make-court-claim-for-money/court-fees">claim fee</a> to:</p>
-              County Court Money Claims Centre<br />
-              PO Box 527<br />
-              Salford<br />
-              Greater Manchester<br />
-              M5 0BY<br />
-              DX: 702634 Salford 5
-              <br>
-  {% include "includes/contact.html" %}
-
-              </div>-
               <!--<div class="column-third">
 <aside class="govuk-related-items" data-module="track-click" role="complementary">
           <h2 data-track-count="sidebarRelatedItemSection">
