@@ -1,0 +1,49 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} index {% endblock %}
+{% block proposition_header %}
+{% set my_account="3" %}
+{% include "includes/propositional_navigation.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Wait!<br>You have a Notice of Intended Prosecution for a speeding ticket from London Metropolitan Police.</h1>
+        <br>
+        <p class="">
+          
+          Your reference: <br><strong class="bold-large">NIP-12345678</strong>
+        </p>
+
+        <p>
+          <!--<strong class="bold"><span id="Date2"></span></strong>-->
+        </p>
+        <!--<p>
+         <a class="font-medium" target="_blank" href='/defendant/full/d-5/correspondence/forms/v2/claim-form-claimant?check=1' style="color: #FFFFFF" >Download your claim as a PDF</a>
+       </p>-->
+     </div>
+     <p>You have only 5 days left to respond to avoid a court summons.</p>
+     <!--<h2 class="heading-medium">What happens next</h2>
+     <p>We’ll send you information about how to proceed by <span id="Date"></span>.</p>-->
+           <p> <a class="button" href='/dashboard/v4/notice-page-nip'>View and take action now</a> </p>
+
+  <!--{% include "includes/contact.html" %}-->
+
+   </main>
+
+   {% endblock %}
+
+    <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span></i>
+  <strong class="bold-small">
+    Wait! You have a Notice of Intended Prosecution for a speeding ticket from London Metropolitan Police.
+  </strong>
+</div>
+<hr>
+<p>You have only 5 days left to respond to avoid a court summons. <a href="notice-page-nip">View and take action now</a></p>

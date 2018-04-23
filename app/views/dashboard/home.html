@@ -58,30 +58,7 @@
             </tr>
           </tbody>
         </table>
-        <h2 class="heading-medium type-heading claims">
-          Claims made against you
-        </h2>
-        <table class="claim-dashboard claims ">
-          <thead>
-            <tr>
-              <th scope="col">Claim number</th>
-              <th scope="col"">Defendant name</th>
-              <th scope="col"">Claim amount</th>
-              <th scope="col" class="mobile-hide">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="mobile-table">
-              <td ><a href="defendant?defendant=1.1">242MC435</a></td>
-              <td >Jan Clark  </td>
-              <td >£1500 </td>
-              <td class="mobile-hide mobile-table"><a a href="../../defendant/full/d-5/task-list">Respond to claim.</a> <br><span class="font-xsmall">(19 days from date of issue remaining)</span> </td>
-            </tr>
-            <tr >
-              <td class="mobile-table-status" colspan="3">Status: <a a href="../../defendant/full/d-5/task-list">Respond to claim.</a> <span class="font-xsmall">(19 days from date of issue remaining)</span> </td>
-            </tr>
-          </tbody>
-        </table>
+       
         {% endif %}
         {% if claimant_table==true %}
         <h2 class="heading-medium type-heading claims">
@@ -146,9 +123,9 @@
                 {% if show_all==true or data['dashboard'] == 1 or data['dashboard'] == 1.5 or data['dashboard'] == 1.6 or data['dashboard'] == 1.7 or data['dashboard'] == 1.8 or data['dashboard'] == 1.9 or data['dashboard'] == 110 or data['dashboard'] == 1.11 %}
                 <tr class="mobile-table" >
                  {% if data['dashboard'] == 1.5 %}
-                 <td ><a href="claimant?claimant=5">352MC733</a></td>
+                 <td ><a href="claimant?claimant=4">352MC733</a></td>
                  {% elif data['dashboard'] == 1.6 %}
-                 <td ><a href="claimant?claimant=5.1">352MC733</a></td>
+                 <td ><a href="claimant?claimant=5">352MC733</a></td>
                  {% elif data['dashboard'] == 1.7 %}
                  <td ><a href="claimant?claimant=6">352MC733</a></td>
                  {% elif data['dashboard'] == 1.8 %}
@@ -537,8 +514,6 @@
         <option value="1.4" {% if data['dashboard'] == 1.4 %}selected{% endif %}>4. CCJ - judgment requested</option>
         <option>-------- Responds to defendant --------</option>
 
-        <option value="1.5" {% if data['dashboard'] == 1.5 %}selected{% endif %}>5. I admit all the claim</option>
-        <option value="1.6" {% if data['dashboard'] == 1.6 %}selected{% endif %}>6. Part admit the claim</option>
         <option value="1.7" {% if data['dashboard'] == 1.7 %}selected{% endif %}>7. Paid what I believe I owe - claim amount</option>
         <option value="110" {% if data['dashboard'] == 110 %}selected{% endif %}>10. Dispute claim  </option>
         <option value="1.19" {% if data['dashboard'] == 1.19 %}selected{% endif %}>10.1 Dispute claim + mediation </option>

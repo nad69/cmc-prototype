@@ -1,0 +1,97 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} ../task-list {% endblock %}
+{% block proposition_header %}
+{% set my_account="1" %}
+{% include "includes/propositional_navigation.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <a href="#" class="link-back">Back</a>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {% if data.return_page and data.return_page.includes('check-and-send') or data.return_page and data.return_page.includes('check-your-answers')%}
+      <form method="post" action="{{ data.return_page if data.return_page | length > 0 else '../task-list' }}" class="form">
+        {% else %}
+        <form method="post" action="their-details/enter-details" class="form">
+          {% endif %}
+          {{formData | safe}}
+          <h1 class="heading-large">
+            Notice for Intended Prosecution
+          </h1>
+          <table>
+  <caption class="heading-small">Details of offence</caption>
+  <tbody>
+    <tr>
+      <td>Issued by:</td>
+      <td>London Metropolitan Police</td>
+    </tr>
+    <tr>
+      <td>Offence:</td>
+      <td>Exceeded 30 MPH speed limit (Unmanned camera)</td>
+    </tr>
+    <tr>
+      <td>Date:</td>
+      <td>4th May 2018</td>
+    </tr>
+    <tr>
+      <td>Time:</td>
+      <td>19:48</td>
+    </tr>
+    <tr>
+      <td>Location:</td>
+      <td>Blackwall Tunnel, Tower Hamlets</td>
+    </tr>
+  </tbody>
+</table>
+ <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span></i>
+  <strong class="bold-small">
+    You have only 5 days left to respond to avoid a court summons.
+  </strong>
+</div><br>
+          <p>Choose ONE of the options:</p>
+          <fieldset>
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="defendant-type" value="Individual" {{ checked("defendant-type", "Individual") }}>
+              <label for="radio-1">
+                <strong class="bold-small">Speed Awareness Course</strong><br>
+                attend an educational course which will cost you £75.00. <a href="#">Learn more</a>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="defendant-type" value="Sole trader" {{ checked("defendant-type", "Sole trader") }}>
+              <label for="radio-2">
+                <strong class="bold-small">Pay a £100 fine</strong><br>
+                and receive 3 penalty points on your licence. <a href="#">Learn more</a>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-3" type="radio" name="defendant-type" value="Company" {{ checked("defendant-type", "Company") }}>
+              <label for="radio-3">
+                <strong class="bold-small">Attend a court hearing</strong><br>
+                contest the alleged offence in court. <a href="#">Learn more</a>
+              </label>
+            </div>
+          </fieldset>
+          {% if data.return_page and data.return_page.includes('check-and-send') or data.return_page and data.return_page.includes('check-your-answers')%}
+          <div class="form-group">
+            <input type="submit" class="button" value="Save changes"/>
+          </div>
+          <a href="{{ data.return_page if data.return_page | length > 0 else '../task-list' }}">Cancel</a>
+          {% else %}
+          <br>
+          <div class="form-group">
+            <a class="button" href="confirmation-page-nip" role="button">Save and continue</a>
+            <!--<input type="submit" class="button" value="Save and continue"/>-->
+          </div>
+          {% endif %}
+        </form>
+      </div>
+    </div>
+  </main>
+  {% endblock %}
