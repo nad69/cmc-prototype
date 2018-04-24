@@ -25,7 +25,16 @@ Money Claims Prototype
           <li>any other addresses where they may be contacted</li>
           <li>any dates or times when you think he or she will be at the address</li>
           </ul><br>
-          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="100"></textarea><br>
+          <!--<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="100"></textarea>-->
+          <fieldset>
+           <textarea class="form-control form-control-3-4 form-control-large"
+            id="claim-reason"
+            rows="3"
+            name="claim-reason"
+            type="text"
+            style="width: 100%"
+            value="">{{data['claim-reason']}}</textarea>
+          </fieldset>
           <div class="clearfix">
             <form method="get" name="registration" action="eligibility" id="registration">
               <input type="hidden" name="control-box" value="1.1">
