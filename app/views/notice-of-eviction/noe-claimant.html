@@ -17,38 +17,35 @@ Money Claims Prototype
 </div>-->
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h1 class="heading-xlarge">Apply to suspend an eviction</h1>
-    <p class="lede">Use this service to apply against a notice of eviction that has been served on you. It costs £50.00 to apply and you may be eligible to <a href="#">get help with paying the fee.</a>
-</p>
-<hr><br>
+    <h1 class="heading-large">About them (the "claimant")</h1>
+    
     <!--<h2 class="heading-large">Before you start</h2>
         <p>To use this service you need:</p>
         <ul class="list list-bullet">
           <li>a copy of your notice of eviction letter</li>
           <li>details of the person or organisation ("the claimant") who sent you the notice of eviction</li>
           <li>pay the application fee of £50 using a credit or debit card</li>
-          </ul><br>-->
-    <h2 class="heading-large">About you</h2>
+          </ul><br>--><br>
 <div class="form-group">
 
-                <label class="form-label" for="claimant_name">Your full name</label>
+                <label class="form-label" for="claimant_name">Name of claimant</label>
                 <input class="form-control " id="claimant_name" name="claimant_name" type="text"
-                value="Jane Doe">
+                value="Swan Housing Association">
               </div>
               <h2 class="heading-medium">
-                The address you are being evicted from
+                Address of claimant
               </h2>
               <div class="form-group">
-  <label class="form-label" for="street-1">House or flat name/number</label>
-  <input class="form-control" id="line-1" name="address-1" type="text" value="Flat 38">
+  <label class="form-label" for="street-1">Address line 1</label>
+  <input class="form-control" id="line-1" name="address-1" type="text" value="Swan Housing Association">
 </div>
 <div class="form-group">
   <label class="form-label" for="street-1">Address line 2</label>
-  <input class="form-control" id="line-2" name="address-2" type="text" value="Balfron Tower">
+  <input class="form-control" id="line-2" name="address-2" type="text" value="Swan Estate">
 </div>
 <div class="form-group">
   <label class="form-label" for="street-1">Address line 3</label>
-  <input class="form-control" id="line-2" name="address-3" type="text" value="St. Leonards Road">
+  <input class="form-control" id="line-2" name="address-3" type="text" value="1-7 Bancroft Close">
 </div>
 <div class="form-group">
   <label class="form-label" for="town-or-city">Town or city</label>
@@ -56,54 +53,11 @@ Money Claims Prototype
 </div>
 <div class="form-group">
   <label class="form-label" for="town-or-city">Postcode</label>
-  <input class="form-control" id="line-5" name="address-5" type="text" value="E3 2BT">
-</div>
-
-<h2 class="heading-medium">About your application</h2>
-          <fieldset>
-            <div class="multiple-choice">
-              <input id="radio-1" input type="radio" checked=“checked” >
-              <label for="radio-1">
-                <strong class="bold-small">Tenant with a social/council landlord</strong><br>
-              </label>
-            </div>
-            <div class="multiple-choice">
-              <input id="radio-2" type="radio" name="defendant-type" value="Sole trader" {{ checked("defendant-type", "Sole trader") }}>
-              <label for="radio-2">
-                <strong class="bold-small">Tenant with a private landlord</strong><br>
-              </label>
-            </div>
-            <div class="multiple-choice">
-              <input id="radio-3" type="radio" unchecked="unchecked" > <!--name="defendant-type" value="Company" {{ checked("defendant-type", "Company") }}>-->
-              <label for="radio-3">
-                <strong class="bold-small">Homeowner with a mortgage</strong>
-              </label>
-            </div>
-          </fieldset>
-
-          <h2 class="heading-medium">Date of the eviction</h2>
-<div class="form-group">
-            <fieldset>
-              <!--<div class="form-label-bold">Date of birth</div>-->
-              <!--<p style="color: #6F777B">For example, 31 3 1980</p>-->
-              <div class="form-date">
-                <div class="form-group form-group-day">
-                  <label for="day">Day</label>
-                  <input  class="form-control" name="day" id="day" type="number" pattern="[0-9]*" min="0" max="31" value="24">
-                </div>
-                <div class="form-group form-group-month">
-                  <label for="month">Month</label>
-                  <input class="form-control" name="month" id="month" type="number" pattern="[0-9]*" min="0" max="12" value="08">
-                </div>
-                <div class="form-group form-group-year">
-                  <label for="year">Year</label>
-                  <input class="form-control" name="year" id="year" type="number" pattern="[0-9]*" min="0" max="2014" value="2018">
-                </div>
-              </div>
-              <fieldset><br><p>at 10:00AM</p></fieldset>
+  <input class="form-control" id="line-5" name="address-5" type="text" value="SW17 1TB">
+</div><br>
 
                   <hr>
-                  <a class="button" href="noe-claimant" role="button">Continue</a><br>
+                  <a class="button" href="noe-reasons" role="button">Continue</a><br>
                 </form>
                 
   <!--{% include "includes/contact.html" %}-->
