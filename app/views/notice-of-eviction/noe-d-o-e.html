@@ -17,7 +17,7 @@ Suspend a notice of eviction
 </div>-->
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h1 class="heading-large">About them (the "claimant")</h1>
+    <h1 class="heading-large">Date of the eviction</h1>
     
     <!--<h2 class="heading-large">Before you start</h2>
         <p>To use this service you need:</p>
@@ -28,36 +28,27 @@ Suspend a notice of eviction
           </ul><br>--><br>
 <div class="form-group">
 
-                <label class="form-label" for="claimant_name">Name of claimant</label>
-                <input class="form-control " id="claimant_name" name="claimant_name" type="text"
-                value="Swan Housing Association">
+                  <fieldset>
+              <!--<div class="form-label-bold">Date of birth</div>-->
+              <!--<p style="color: #6F777B">For example, 31 3 1980</p>-->
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="day">Day</label>
+                  <input  class="form-control" name="day" id="day" type="number" pattern="[0-9]*" min="0" max="31" value="24">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="month">Month</label>
+                  <input class="form-control" name="month" id="month" type="number" pattern="[0-9]*" min="0" max="12" value="08">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="year">Year</label>
+                  <input class="form-control" name="year" id="year" type="number" pattern="[0-9]*" min="0" max="2014" value="2018">
+                </div>
               </div>
-              <h2 class="heading-medium">
-                Address of claimant
-              </h2>
-              <div class="form-group">
-  <label class="form-label" for="street-1">Address line 1</label>
-  <input class="form-control" id="line-1" name="address-1" type="text" value="Swan Housing Association">
-</div>
-<div class="form-group">
-  <label class="form-label" for="street-1">Address line 2</label>
-  <input class="form-control" id="line-2" name="address-2" type="text" value="Swan Estate">
-</div>
-<div class="form-group">
-  <label class="form-label" for="street-1">Address line 3</label>
-  <input class="form-control" id="line-2" name="address-3" type="text" value="1-7 Bancroft Close">
-</div>
-<div class="form-group">
-  <label class="form-label" for="town-or-city">Town or city</label>
-  <input class="form-control" id="line-4" name="address-4" type="text" value="London">
-</div>
-<div class="form-group">
-  <label class="form-label" for="town-or-city">Postcode</label>
-  <input class="form-control" id="line-5" name="address-5" type="text" value="SW17 1TB">
-</div>
+              <fieldset><br><p>at 10:00AM</p></fieldset>
 
                   <hr>
-                  <a class="button" href="noe-reasons" role="button">Continue</a><br>
+                  <a class="button" href="noe-claimant" role="button">Continue</a><br>
                 </form>
                 
   <!--{% include "includes/contact.html" %}-->

@@ -17,52 +17,43 @@ Suspend a notice of eviction
 </div>-->
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h1 class="heading-large">About them (the "claimant")</h1>
-    
-    <!--<h2 class="heading-large">Before you start</h2>
-        <p>To use this service you need:</p>
-        <ul class="list list-bullet">
-          <li>a copy of your notice of eviction letter</li>
-          <li>details of the person or organisation ("the claimant") who sent you the notice of eviction</li>
-          <li>pay the application fee of £50 using a credit or debit card</li>
-          </ul><br>--><br>
-<div class="form-group">
+    <h1 class="heading-large">About your application</h1>
 
-                <label class="form-label" for="claimant_name">Name of claimant</label>
-                <input class="form-control " id="claimant_name" name="claimant_name" type="text"
-                value="Swan Housing Association">
-              </div>
-              <h2 class="heading-medium">
-                Address of claimant
-              </h2>
-              <div class="form-group">
-  <label class="form-label" for="street-1">Address line 1</label>
-  <input class="form-control" id="line-1" name="address-1" type="text" value="Swan Housing Association">
-</div>
 <div class="form-group">
-  <label class="form-label" for="street-1">Address line 2</label>
-  <input class="form-control" id="line-2" name="address-2" type="text" value="Swan Estate">
-</div>
-<div class="form-group">
-  <label class="form-label" for="street-1">Address line 3</label>
-  <input class="form-control" id="line-2" name="address-3" type="text" value="1-7 Bancroft Close">
-</div>
-<div class="form-group">
-  <label class="form-label" for="town-or-city">Town or city</label>
-  <input class="form-control" id="line-4" name="address-4" type="text" value="London">
-</div>
-<div class="form-group">
-  <label class="form-label" for="town-or-city">Postcode</label>
-  <input class="form-control" id="line-5" name="address-5" type="text" value="SW17 1TB">
-</div>
+  <fieldset>
+
+    <legend>
+      <h1 class="heading-medium">Are you a:</h1>
+    </legend>
+            <div class="multiple-choice">
+              <input id="radio-1" input type="radio" checked=“checked” >
+              <label for="radio-1">
+                <strong class="bold-small">tenant with a social/council landlord</strong><br>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="defendant-type" value="Sole trader" {{ checked("defendant-type", "Sole trader") }}>
+              <label for="radio-2">
+                <strong class="bold-small">tenant with a private landlord</strong><br>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-3" type="radio" unchecked="unchecked" > <!--name="defendant-type" value="Company" {{ checked("defendant-type", "Company") }}>-->
+              <label for="radio-3">
+                <strong class="bold-small">homeowner with a mortgage</strong>
+              </label>
+            </div>
+          </fieldset>
+               </form>
+               </div>
 
                   <hr>
-                  <a class="button" href="noe-reasons" role="button">Continue</a><br>
-                </form>
+                  <a class="button" href="noe-d-o-e" role="button">Continue</a>
+           
                 
   <!--{% include "includes/contact.html" %}-->
 
-              </div>
+              
               <!--<div class="column-third">
 <aside class="govuk-related-items" data-module="track-click" role="complementary">
           <h2 data-track-count="sidebarRelatedItemSection">

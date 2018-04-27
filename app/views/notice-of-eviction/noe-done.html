@@ -1,0 +1,38 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Suspend a notice of eviction
+{% endblock %}
+{% block home_link %} index {% endblock %}
+{% block proposition_header %}
+{% set my_account="3" %}
+{% include "includes/propositional_navigation.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Your response has been submitted.</h1>
+        <br>
+        <br>
+        <!--<p class="">
+          Your reference: <br><strong class="bold-large">NIP-12345678</strong>
+        </p>
+
+        <p>
+          <strong class="bold">10 June 2018</span></strong>
+        </p>
+        <p>
+         <a class="font-medium" target="_blank" href='/defendant/full/d-5/correspondence/forms/v2/claim-form-claimant?check=1' style="color: #FFFFFF" >Download your claim as a PDF</a>
+       </p>-->
+     </div>
+     <h2 class="heading-medium">What happens next</h2>
+     <p>We’ll process your application and contact you before your eviction date of August 24th 2018. You will likely be required to attend a court hearing.</span></p>
+           <p> <a class="button" href=''>Finished</a> </p>
+
+  <!--{% include "includes/contact.html" %}-->
+
+   </main>
+
+   {% endblock %}

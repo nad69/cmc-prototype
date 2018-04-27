@@ -1,0 +1,33 @@
+{% extends "layout_task-list.html" %}
+{% block page_title %}
+Money Claims Prototype
+{% endblock %}
+{% block home_link %} index {% endblock %}
+{% block proposition_header %}
+{% set my_account="3" %}
+{% include "includes/propositional_navigation_HWF.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Your £50 fee for your application<br>has been waived.<br>
+</h1>
+        <br>
+        <!--<p>
+          <strong class="bold">You have nothing further to pay.</span></strong>
+        </p>-->
+        <p>
+         <a class="font-medium" target="_blank" style="color: #FFFFFF" >You have nothing further to pay.</a>
+       </p>
+     </div><hr>
+
+           <p> <a class="button" href='../notice-of-eviction/noe-done'>Next</a> </p>
+
+  <!--{% include "includes/contact.html" %}-->
+
+   </main>
+
+   {% endblock %}

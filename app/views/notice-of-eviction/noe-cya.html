@@ -1,148 +1,107 @@
 {% extends "layout_unbranded.html" %}
 {% block page_title %}
-Money Claims Prototype
+Suspend a notice of eviction
 {% endblock %}
 {% block content %}
 <style type="text/css">
 .report-error {display: none}
 </style>
 <main id="content" role="main">
- <div class="breadcrumbs">
-  <ol>
-    <li><a href="/">Home</a></li>
-    <li><a href="/">Business and self-employed</a></li>
-    <li><a href="/">Business debt and bankruptcy</a></li>
-    <li><a href="/">Apply for a Warrant of control</a></li>
-  </ol>
-</div>
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Check your answers before sending your application</h1>
-      <h2 class="heading-medium">About your warrant</h2>
+      <h1 class="heading-large">Check your answers before sending your application</h1>
+    <h2 class="heading-medium">About you</h2>
     </div>
   </div>
-  
 
-<dl class="check-your-answers check-your-answers--short">
+  
+  <dl class="check-your-answers check-your-answers--short">
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Your full name</dt>
+      <dd class="check-your-answers__answer">Jane Doe</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>
+    </div>
+    
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">The address you are being evicted from</dt>
+      <dd class="check-your-answers__answer">Flat 38<br>Balfron Tower<br>St. Leonards Road<br>London<br>E3 2BT</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
+    </div>
+
+       <h2 class="heading-medium">About your application</h2>
+
+       <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">You are a:</dt>
+      <dd class="check-your-answers__answer">tenant with a social/council landlord</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license type</span></a></dd>
+    </div>
+
+        <h2 class="heading-medium">Date of your eviction</h2>
 
   <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Date of money claim</dt>
-      <dd class="check-your-answers__answer">12th September, 2018</dd>
+      <dt class="check-your-answers__question">Date and time</dt>
+      <dd class="check-your-answers__answer">24th August, 2018 at 10:00AM</dd>
       <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> date of claim</span></a></dd>-->
     </div>
+
+
+    <h2 class="heading-medium">About them (the "claimant")</h2>
+  
     
     <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Name of claimant</dt>
+      <dd class="check-your-answers__answer">Swan Housing Association</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>
+    </div>
+    
+    
+    <div class="check-your-answers__row">
+      <dt class="check-your-answers__question">Address of claimant</dt>
+      <dd class="check-your-answers__answer">Swan Housing Association<br>Swan Estate<br>1-7 Bancroft Close<br>London<br>SW17 1TB</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
+    </div>
+
+    
+    <!--<div class="check-your-answers__row">
       <dt class="check-your-answers__question">Case details</dt>
       <dd class="check-your-answers__answer">John Doe Consulting vs Jane Doe</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> name</span></a></dd>-->
-    </div>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> name</span></a></dd>
+    </div>-->
     
     
-    <div class="check-your-answers__row">
+    <!--<div class="check-your-answers__row">
       <dt class="check-your-answers__question">Case outcome</dt>
       <dd class="check-your-answers__answer">Claimant Awarded £2880</dd>
-      <!--<dd class="check-your-answers__answer">72 Guild Street<br>London<br>SW23 6FH</dd>-->
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> home address</span></a></dd>-->
-    </div>
+      <dd class="check-your-answers__answer">72 Guild Street<br>London<br>SW23 6FH</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
+    </div>-->
     
     <!--<div class="check-your-answers__row">
       <dt class="check-your-answers__question">Contact details</dt>
       <dd class="check-your-answers__answer">07700 900 457<br>sarah.phillips@example.com</dd>
       <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> contact details</span></a></dd>
     </div>-->
-    
-  </dl>
-  
-  <h2 class="heading-medium">Your details</h2>
-  
-  <dl class="check-your-answers check-your-answers--short">
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Full name (include title)</dt>
-      <dd class="check-your-answers__answer">John Doe</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>
-    </div>
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Trading as (optional)</dt>
-      <dd class="check-your-answers__answer">John Doe Consulting</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license type</span></a></dd>
-    </div>
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Your address</dt>
-      <dd class="check-your-answers__answer">Unit 4<br>27 High Street<br>London<br>SW17 4AL</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
-    </div>
-
-    <h2 class="heading-medium">Their details</h2>
-  
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Full name (include title)</dt>
-      <dd class="check-your-answers__answer">Jane Doe</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>
-    </div>
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Trading as (optional)</dt>
-      <dd class="check-your-answers__answer">None provided</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license type</span></a></dd>
-    </div>
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Their address</dt>
-      <dd class="check-your-answers__answer">10 The Mall<br>27 High Street<br>London<br>SW1E 5DM</dd>
-      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> home address</span></a></dd>
-    </div>
-
-        <h2 class="heading-medium">Details of warrant</h2>
-
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Claim amount:</dt>
-      <dd class="check-your-answers__answer">£2880.00</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> previous application number</span></a></dd>-->
-    </div>
-    
-    <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Claim fee:</dt>
-      <dd class="check-your-answers__answer">£70</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> license type</span></a></dd>-->
-    </div>
-
-        <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Total amount you're claiming</dt>
-      <dd class="check-your-answers__answer">£2,950.00</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> license type</span></a></dd>-->
-    </div>
  
-         <h2 class="heading-medium">How you would like the amount owed to be collected</h2>   
+         <h2 class="heading-medium">Why you should stay in the property</h2>   
 
          <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">The whole amount in full</dt>
-      <dd class="check-your-answers__answer">£2,950.00</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> license type</span></a></dd>-->
+      <dt class="check-your-answers__question">Your reasons</dt>
+      <dd class="check-your-answers__answer">The reasons I think I should not be evicted are...</dd>
+      <dd class="check-your-answers__change"><a href="#">Change<span class="visually-hidden"> license type</span></a></dd>
     </div>
+
+      </dl>
     
-
-    <!--<h2 class="heading-medium">Additional information about the Debtor</h2>-->  
-
-         <div class="check-your-answers__row">
-      <dt class="check-your-answers__question">Additional information about the Debtor</dt>
-      <dd class="check-your-answers__answer">They are running 3 other successful businesses and properties<br>and can easily afford to pay</dd>
-      <dd class="check-your-answers__change"><!--<a href="#">Change<span class="visually-hidden"> license type</span></a></dd>-->
-    </div>
-
-
-  </dl>
   
-  <h2 class="heading-medium">Now send your application for a warrant of control</h2>
+  <h2 class="heading-medium">Now send your application to suspend this notice of eviction</h2>
   
   <div class="text">
     <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
   </div>
   
-  <p><a class="button" href="wfc-confirmation-page">Accept and send application</a></p>
+  <p><a class="button" href="noe-help-with-fees-1">Save and continue</a></p>
 
 </main>
 

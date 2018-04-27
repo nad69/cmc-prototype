@@ -1,7 +1,6 @@
-{% extends "layout.html" %}
-
+{% extends "layout_unbranded.html" %}
 {% block page_title %}
-Money Claims Prototype
+Suspend a notice of eviction
 {% endblock %}
 
 {% block content %}
@@ -25,9 +24,9 @@ Money Claims Prototype
       autocomplete="off">
       {% endif %}
       {{formData | safe}}
-      <a href="#" class="link-back">Back</a>
-      <h1 class="heading-xlarge">Pay application fee<h1>
-      <h1 class="heading-large">
+      <!--<a href="#" class="link-back">Back</a>-->
+      <h1 class="heading-large">Pay application fee<h1>
+      <h1 class="heading-medium">
         Do you need help paying your court fees?
       </h1>
       <p>If you’re on a low income or get certain benefits you could get financial help with court fees.</p>
@@ -48,7 +47,7 @@ Money Claims Prototype
       <a href="{{ data.return_page if data.return_page | length > 0 else '../task-list' }}">Cancel</a>
       {% else %}
       <div class="form-group">
-        <p><a class="button" href="https://sm6gbj.axshare.com/hwf_calculator_start_page.html">Save and continue</a></p>
+        <p><a class="button" href="../help-with-fees/hwf_start-step3">Save and continue</a></p>
       </div>
       {% endif %}
     </form>
