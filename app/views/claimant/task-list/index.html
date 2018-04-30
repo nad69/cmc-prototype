@@ -47,9 +47,8 @@
                   </a>
                 </td>
                 <td class="numeric" id="task-status" scope="col" id="col-status">
-                  {% if data.resolve_dispute=="complete" %}
                   {% include "includes/task_status_finished.html" %}
-                  {% endif %}
+                  <input type="hidden" name="resolve_dispute" value="complete">
                 </td>
               </tr>
             </tbody>
@@ -76,9 +75,8 @@
                 </a>
               </td>
               <td class="numeric" id="task-status" scope="col" id="col-status">
-                {% if data.completing_your_claim=="complete" %}
+                <input type="hidden" name="completing-your-claim" value="complete">
                 {% include "includes/task_status_finished.html" %}
-                {% endif %}
               </td>
             </tr>
             <tr id="your-details">
@@ -88,9 +86,8 @@
                 </a>
               </td>
               <td class="numeric" id="task-status" scope="col" id="col-status">
-                {% if data.your_details=="complete" %}
+                <input type="hidden" name="your-details" value="complete">
                 {% include "includes/task_status_finished.html" %}
-                {% endif %}
               </td>
             </tr>
             <tr id="their-details">
@@ -100,9 +97,8 @@
                 </a>
               </td>
               <td class="numeric" id="task-status" scope="col" id="col-status">
-                {% if data.their_details=="complete" %}
+                <input type="hidden" name="their-details" value="complete">
                 {% include "includes/task_status_finished.html" %}
-                {% endif %}
               </td>
             </tr>
             <tr id="claim-amount">
@@ -112,9 +108,8 @@
                 </a>
               </td>
               <td class="numeric" id="task-status" scope="col" id="col-status">
-                {% if data.claim_amount=="complete" %}
+                <input type="hidden" name="claim-amount-alt" value="complete">
                 {% include "includes/task_status_finished.html" %}
-                {% endif %}
               </td>
             </tr>
             <tr id="claim-details">
